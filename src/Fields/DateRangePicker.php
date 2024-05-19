@@ -154,6 +154,7 @@ class DateRangePicker extends Field implements HasAffixActions
     public function format(string|Closure|null $format) : static
     {
         $this->format = $format;
+        $this->formatCalled = true;
 
         return $this;
     }
